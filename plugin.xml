@@ -4,29 +4,23 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>Minimal Plugin</name>
-    <description>Minimal Cordova Plugin for testing echo</description>
+    <description>Minimal Cordova plugin example</description>
     <license>MIT</license>
 
-    <!-- JavaScript interface -->
+    <!-- JS bridge -->
     <js-module src="www/minimal.js" name="Minimal">
-        <clobbers target="Legic"/>
+        <clobbers target="Legic" />
     </js-module>
 
     <!-- ANDROID -->
     <platform name="android">
-        <source-file src="src/android/MinimalPlugin.java"
-                     target-dir="src/com/ofe/minimal"/>
+        <source-file src="src/android/MinimalPlugin.java" target-dir="src/com/ofe/minimalplugin" />
     </platform>
 
     <!-- iOS -->
-	<platform name="ios">
-			<config-file target="config.xml" parent="/*">
-				<feature name="LegicPlugin">
-					<param name="ios-package" value="LegicPlugin"/>
-				</feature>
-			</config-file>
+    <platform name="ios">
+        <header-file src="src/ios/MinimalPlugin.h" />
+        <source-file src="src/ios/MinimalPlugin.m" />
+    </platform>
 
-			<header-file src="src/ios/LegicPlugin.h"/>
-			<source-file src="src/ios/LegicPlugin.m"/>
-		</platform>
 </plugin>

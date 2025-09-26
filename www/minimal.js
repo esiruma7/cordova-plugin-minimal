@@ -1,5 +1,9 @@
 var exec = require('cordova/exec');
 
-exports.echo = function (arg0, success, error) {
-    exec(success, error, 'MinimalPlugin', 'echo', [arg0]);
+var Minimal = {
+    echo: function (arg0, success, error) {
+        exec(success, error, "MinimalPlugin", "echo", [arg0]);
+    }
 };
+
+module.exports = Minimal;

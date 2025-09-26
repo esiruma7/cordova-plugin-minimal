@@ -1,12 +1,12 @@
 {
   "name": "cordova-plugin-minimal",
   "version": "1.0.0",
-  "description": "Minimal Cordova Plugin for testing echo",
+  "description": "Minimal Cordova plugin example",
   "cordova": {
     "id": "com.ofe.minimalplugin",
     "platforms": ["android", "ios"]
   },
-  "keywords": ["cordova", "plugin", "minimal", "echo"],
+  "keywords": ["cordova", "minimal", "plugin"],
   "author": "Your Name",
   "license": "MIT"
 }

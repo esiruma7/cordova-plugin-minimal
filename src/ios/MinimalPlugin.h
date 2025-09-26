@@ -1,5 +1,5 @@
 #import <Cordova/CDVPlugin.h>
 
-@interface LegicPlugin : CDVPlugin
+@interface MinimalPlugin : CDVPlugin
 - (void)echo:(CDVInvokedUrlCommand*)command;
 @end
