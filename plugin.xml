@@ -19,7 +19,14 @@
     </platform>
 
     <!-- iOS -->
-    <platform name="ios">
-        <source-file src="src/ios/MinimalPlugin.swift"/>
-    </platform>
+	<platform name="ios">
+			<config-file target="config.xml" parent="/*">
+				<feature name="LegicPlugin">
+					<param name="ios-package" value="LegicPlugin"/>
+				</feature>
+			</config-file>
+
+			<header-file src="src/ios/LegicPlugin.h"/>
+			<source-file src="src/ios/LegicPlugin.m"/>
+		</platform>
 </plugin>
