@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-minimal" version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>MinimalPlugin</name>
+    <js-module src="www/minimal.js" name="Minimal">
+        <clobbers target="Minimal" />
+    </js-module>
+
+    <platform name="android">
+        <source-file src="src/android/MinimalPlugin.java" target-dir="src/com/minimal/plugin" />
+    </platform>
+
+    <platform name="ios">
+        <source-file src="src/ios/MinimalPlugin.m" />
+    </platform>
+</plugin>
