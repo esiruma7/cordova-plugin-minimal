@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-plugin-minimal" version="1.0.0"
+<plugin id="com.ofe.minimalplugin" version="1.0.0"
         xmlns="http://apache.org/cordova/ns/plugins"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <name>MinimalPlugin</name>
-    <js-module src="www/legic.js" name="Legic">
-		<clobbers target="Legic"/>
-	</js-module>
+    <name>Minimal Plugin</name>
+    <description>Minimal Cordova Plugin for testing echo</description>
+    <license>MIT</license>
 
+    <!-- JavaScript interface -->
+    <js-module src="www/minimal.js" name="Minimal">
+        <clobbers target="Legic"/>
+    </js-module>
+
+    <!-- ANDROID -->
     <platform name="android">
-        <source-file src="src/android/MinimalPlugin.java" target-dir="src/com/minimal/plugin" />
+        <source-file src="src/android/MinimalPlugin.java"
+                     target-dir="src/com/ofe/minimal"/>
     </platform>
 
+    <!-- iOS -->
     <platform name="ios">
-        <source-file src="src/ios/MinimalPlugin.m" />
+        <source-file src="src/ios/MinimalPlugin.swift"/>
     </platform>
 </plugin>

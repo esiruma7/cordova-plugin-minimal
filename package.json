@@ -1,12 +1,12 @@
 {
   "name": "cordova-plugin-minimal",
   "version": "1.0.0",
-  "description": "A minimal Cordova plugin for testing in OutSystems",
+  "description": "Minimal Cordova Plugin for testing echo",
   "cordova": {
-    "id": "cordova-plugin-minimal",
+    "id": "com.ofe.minimalplugin",
     "platforms": ["android", "ios"]
   },
-  "keywords": ["cordova", "plugin", "minimal"],
-  "author": "AI Assistant",
+  "keywords": ["cordova", "plugin", "minimal", "echo"],
+  "author": "Your Name",
   "license": "MIT"
 }
