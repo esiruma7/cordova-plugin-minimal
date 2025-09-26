@@ -3,13 +3,9 @@
 @implementation MinimalPlugin
 
 - (void)echo:(CDVInvokedUrlCommand*)command {
-    NSString* message = [command.arguments objectAtIndex:0];
-    if (message == nil) {
-        message = @"";
-    }
-    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
-                                                      messageAs:[NSString stringWithFormat:@"Echo: %@", message]];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    NSString* msg = [command.arguments objectAtIndex:0];
+    CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
+    [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
 @end

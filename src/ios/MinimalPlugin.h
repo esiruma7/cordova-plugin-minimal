@@ -1,4 +1,4 @@
-#import <Cordova/CDVPlugin.h>
+#import <Cordova/CDV.h>
 
 @interface MinimalPlugin : CDVPlugin
 - (void)echo:(CDVInvokedUrlCommand*)command;
