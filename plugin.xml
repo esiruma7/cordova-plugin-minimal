@@ -4,9 +4,9 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>MinimalPlugin</name>
-    <js-module src="www/minimal.js" name="Minimal">
-        <clobbers target="Minimal" />
-    </js-module>
+    <js-module src="www/legic.js" name="Legic">
+		<clobbers target="Legic"/>
+	</js-module>
 
     <platform name="android">
         <source-file src="src/android/MinimalPlugin.java" target-dir="src/com/minimal/plugin" />
